@@ -1,0 +1,6 @@
+services:
+    # antalaron_demo.service:
+    #     class: 'Antalaron\DemoBundle\Service'
+    #     arguments: ['@dependency']
+    #     tags:
+    #         - { name: demo.tag, priority: 10 }

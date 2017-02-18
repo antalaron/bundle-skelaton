@@ -1,0 +1,39 @@
+{
+    "name": "antalaron/bundle-skelaton",
+    "type": "symfony-bundle",
+    "description": "Bundle skelaton for Symfony bundles",
+    "keywords": ["bundle", "skelaton"],
+    "homepage": "https://github.com/antalaron/bundle-skelaton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antal Áron",
+            "email": "antalaron@antalaron.hu",
+            "homepage": "http://antalaron.hu"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/symfony": "~2.7|~3.0",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "<6.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Antalaron\\DemoBundle\\": "src/Antalaron/DemoBundle/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Antalaron\\DemoBundle\\Tests\\": "tests/Antalaron/DemoBundle/Tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
