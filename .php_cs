@@ -7,22 +7,28 @@ For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 EOF;
 
-Symfony\CS\Fixer\Contrib\HeaderCommentFixer::setHeader($header);
-
-return Symfony\CS\Config\Config::create()
-    ->setUsingLinter(false)
-    ->level(Symfony\CS\FixerInterface::SYMFONY_LEVEL)
-    ->fixers([
-        'header_comment',
-        'multiline_spaces_before_semicolon',
-        'newline_after_open_tag',
-        'ordered_use',
-        'short_array_syntax',
-        'strict',
-        'strict_param',
+return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setUsingCache(false)
+    ->setRules([
+        '@Symfony' => true,
+        '@Symfony:risky' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'header_comment' => ['header' => $header],
+        'heredoc_to_nowdoc' => true,
+        'linebreak_after_opening_tag' => true,
+        'no_extra_consecutive_blank_lines' => ['break', 'continue', 'extra', 'return', 'throw', 'use', 'parenthesis_brace_block', 'square_brace_block', 'curly_brace_block'],
+        'no_multiline_whitespace_before_semicolons' => false,
+        'no_unreachable_default_argument_value' => true,
+        'no_useless_else' => true,
+        'no_useless_return' => true,
+        'ordered_imports' => true,
+        'psr4' => true,
+        'strict_comparison' => true,
+        'strict_param' => true,
     ])
-    ->finder(
-        Symfony\CS\Finder\DefaultFinder::create()
+    ->setFinder(
+        PhpCsFixer\Finder::create()
             ->in(__DIR__)
             ->exclude([
                 'vendor',
@@ -31,5 +37,4 @@ return Symfony\CS\Config\Config::create()
                 'doc',
                 'var',
             ])
-    )
-;
+    );
