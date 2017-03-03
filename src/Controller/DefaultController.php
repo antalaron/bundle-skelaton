@@ -18,6 +18,13 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class DefaultController
 {
+    /**
+     * IndexAction.
+     *
+     * The main controller.
+     *
+     * @return Response
+     */
     public function indexAction()
     {
         return new Response('Ok');
