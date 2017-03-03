@@ -7,3 +7,13 @@ services:
 
     antalaron_demo.default_controller:
         class: 'Antalaron\Bundle\DemoBundle\Controller\DefaultController'
+
+    antalaron_demo.exception_listener:
+        class: 'Antalaron\Bundle\DemoBundle\EventListener\ExceptionListener'
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception }
+
+    antalaron_demo.exception_subscriber:
+        class: 'Antalaron\Bundle\DemoBundle\EventSubscriber\ExceptionSubscriber'
+        tags:
+            - { name: kernel.event_subscriber }
