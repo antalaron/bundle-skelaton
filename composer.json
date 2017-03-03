@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Antalaron\\DemoBundle\\": "src/Antalaron/DemoBundle/"
+            "Antalaron\\Bundle\\DemoBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Antalaron\\DemoBundle\\Tests\\": "tests/Antalaron/DemoBundle/Tests/"
+            "Antalaron\\Bundle\\DemoBundle\\Tests\\": "tests/Tests/"
         }
     },
     "minimum-stability": "dev",

@@ -23,7 +23,7 @@
         <whitelist>
             <directory>./src</directory>
             <exclude>
-                <directory>./src/Antalaron/DemoBundle/Resources</directory>
+                <directory>./src/Resources</directory>
             </exclude>
         </whitelist>
     </filter>

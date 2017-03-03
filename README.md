@@ -1,7 +1,7 @@
 Bundle skelaton
 ===============
 
-Budnle skelaton for Symfony bundles.
+Bundle skelaton for my [Symfony](https://symfony.com) bundles.
 
 Installation
 ------------
@@ -35,7 +35,7 @@ class AppKernel extends Kernel
         $bundles = [
             // ...
 
-            new Antalaron\DemoBundle\AntalaronDemoBundle(),
+            new Antalaron\Bundle\DemoBundle\AntalaronDemoBundle(),
         ];
 
         // ...
@@ -44,3 +44,8 @@ class AppKernel extends Kernel
     // ...
 }
 ```
+
+License
+-------
+
+This bundle is under [MIT License](http://opensource.org/licenses/mit-license.php)

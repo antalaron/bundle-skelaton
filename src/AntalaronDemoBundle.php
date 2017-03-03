@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Antalaron\DoctrineTwigBundle;
+namespace Antalaron\Bundle\DemoBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Antalaron\DemoBundle\DependencyInjection;
+namespace Antalaron\Bundle\DemoBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
