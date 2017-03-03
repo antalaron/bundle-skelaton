@@ -1,0 +1,7 @@
+Antalaron\Bundle\DemoBundle\Model\Tag:
+    repositoryClass: 'Antalaron\Bundle\DemoBundle\Repository\TagRepository'
+    fields:
+        id:
+            id: true
+        name:
+            type: string

@@ -1,0 +1,11 @@
+Antalaron\Bundle\DemoBundle\Model\Tag:
+    type: entity
+    repositoryClass: 'Antalaron\Bundle\DemoBundle\Repository\Doctrine\TagRepository'
+    id:
+        id:
+            type: integer
+            generator: { strategy: AUTO }
+    fields:
+        name:
+            type: string
+            length: 100
