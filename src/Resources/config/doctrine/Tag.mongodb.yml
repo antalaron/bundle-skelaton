@@ -1,5 +1,5 @@
 Antalaron\Bundle\DemoBundle\Model\Tag:
-    repositoryClass: 'Antalaron\Bundle\DemoBundle\Repository\TagRepository'
+    repositoryClass: 'Antalaron\Bundle\DemoBundle\Repository\MongoDB\TagRepository'
     fields:
         id:
             id: true
