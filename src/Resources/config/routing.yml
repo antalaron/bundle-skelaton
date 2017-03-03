@@ -1,4 +1,4 @@
 antalaron_demo_default_index:
     path: /
     defaults:
-        - _controller: antalaron_demo.default_controller:indexAction
+        _controller: antalaron_demo.default_controller:indexAction
