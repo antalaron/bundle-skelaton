@@ -48,4 +48,4 @@ class AppKernel extends Kernel
 License
 -------
 
-This bundle is under [MIT License](http://opensource.org/licenses/mit-license.php)
+This bundle is under [MIT License](http://opensource.org/licenses/mit-license.php).
