@@ -4,3 +4,6 @@ services:
     #     arguments: ['@dependency']
     #     tags:
     #         - { name: demo.tag, priority: 10 }
+
+    antalaron_demo.default_controller:
+        class: 'Antalaron\Bundle\DemoBundle\Controller\DefaultController'
